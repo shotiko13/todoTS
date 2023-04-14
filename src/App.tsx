@@ -22,7 +22,7 @@ const App: React.FC = () => {
     <div className="App">
       <span className='Name'>Task Maker</span>  
       <Input task={task} setTask={setTask} handleAdd={add} />
-      {taskList.map((t) => (<li>{t.tasked}</li>))}
+      <Tasks tasks={taskList} setTaskList={setTaskList}/>
     </div>
   );
 }

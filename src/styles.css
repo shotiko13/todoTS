@@ -43,3 +43,10 @@
 .input--add:hover {
     background-color: rgb(124, 200, 200);
 }
+
+.tasks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}
