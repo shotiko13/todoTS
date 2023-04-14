@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Input from './Input'
 import {Task} from "./Task"
+import Tasks from './Tasks'
 
 const App: React.FC = () => {
 
@@ -21,6 +22,7 @@ const App: React.FC = () => {
     <div className="App">
       <span className='Name'>Task Maker</span>  
       <Input task={task} setTask={setTask} handleAdd={add} />
+      {taskList.map((t) => (<li>{t.tasked}</li>))}
     </div>
   );
 }
