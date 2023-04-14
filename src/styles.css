@@ -1,0 +1,45 @@
+.input {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    position: relative;
+}
+
+.input--box {
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 25px;
+    border-radius: 40px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+
+.input--box:focus {
+    box-shadow: 0 0 10px 1000px rgba(0,0,0,0.5);
+    outline: none;
+}
+
+.input--add {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 11px;
+    right: 0px;
+    border: none;
+    border-radius: 45px;
+    font-size: 15px;
+    background-color: rgb(127, 255, 212);
+    color: whitesmoke;
+    transition: 0.2s all;
+    box-shadow: 0 0 10px black;
+}
+
+.input--add:active {
+    transform: scale(0.7);
+    box-shadow: 0 0 5px black;
+}
+
+.input--add:hover {
+    background-color: rgb(124, 200, 200);
+}
